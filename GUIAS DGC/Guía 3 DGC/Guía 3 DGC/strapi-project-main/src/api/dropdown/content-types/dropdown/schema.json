@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dropdowns",
+  "info": {
+    "singularName": "dropdown",
+    "pluralName": "dropdowns",
+    "displayName": "Dropdown"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "menu_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item",
+      "mappedBy": "dropdown"
+    }
+  }
+}
